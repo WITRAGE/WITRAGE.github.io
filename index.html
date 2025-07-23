@@ -1,109 +1,124 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WITRAGE Beats — Купить Trap Beat</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WITRAGE BEATS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: linear-gradient(145deg, #0f0f0f 70%, #e11d48 100%);
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #9ca3af;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .beats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .beat-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .beat-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(225, 29, 72, 0.3);
+    }
+    .beat-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    .beat-card p {
+      color: #9ca3af;
+      margin-bottom: 15px;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #e11d48;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #be123c;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+      background: #0f0f0f;
+      border-top: 1px solid #1f1f1f;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 font-sans">
-  <!-- Hero Section -->
-  <section id="hero" class="bg-cover bg-center" style="background-image: url('https://your-image-url.com/hero-bg.jpg');">
-    <div class="bg-black bg-opacity-50">
-      <div class="container mx-auto px-4 py-32 text-center text-white">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4">Эксклюзивные Trap Beats от WITRAGE</h1>
-        <p class="text-lg md:text-2xl mb-8">Купите свой следующий хитовый бит прямо сейчас</p>
-        <a href="#pricing" class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition">Купить бит</a>
+<body>
+  <header>
+    <h1>WITRAGE BEATS</h1>
+    <p>Прокачай свой звук вместе с нами</p>
+  </header>
+
+  <section class="section">
+    <h2>🔥 Горячие биты</h2>
+    <div class="beats-grid">
+      <div class="beat-card">
+        <h3>Trap Type Beat #1</h3>
+        <p>808-heavy, dark vibes</p>
+        <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
+      </div>
+      <div class="beat-card">
+        <h3>Drill Type Beat #2</h3>
+        <p>Hard, punchy, atmospheric</p>
+        <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
+      </div>
+      <div class="beat-card">
+        <h3>RnB Type Beat #3</h3>
+        <p>Smooth, melodic, soulful</p>
+        <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
       </div>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-8">Почему WITRAGE Beats?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Премиум качество</h3>
-          <p>Все биты сводятся и мастерятся профессионально.</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Гибкие лицензии</h3>
-          <p>Non-exclusive, exclusive, bundle – выберите свой вариант.</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-2">Поддержка клиентов</h3>
-          <p>Быстрый ответ и помощь с интеграцией в ваш трек.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-8">Цены и лицензии</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Non-Exclusive -->
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-4">Non-Exclusive</h3>
-          <p class="text-4xl font-bold mb-4">$30</p>
-          <ul class="mb-6 text-left">
-            <li>✔️ Unlimited streams</li>
-            <li>✔️ Royalty‑free up to 100k</li>
-            <li>✔️ Preview with watermark</li>
-          </ul>
-          <a href="https://beatstars.com/yourprofile/non-exclusive" class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition">Купить</a>
-        </div>
-        <!-- Exclusive -->
-        <div class="p-6 bg-white rounded-xl shadow border-4 border-red-500">
-          <h3 class="text-2xl font-semibold mb-4">Exclusive</h3>
-          <p class="text-4xl font-bold mb-4">$200</p>
-          <ul class="mb-6 text-left">
-            <li>✔️ Полные права</li>
-            <li>✔️ Без ограничений по стримам</li>
-            <li>✔️ WAV + Project files</li>
-          </ul>
-          <a href="https://beatstars.com/yourprofile/exclusive" class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition">Купить</a>
-        </div>
-        <!-- Bundle -->
-        <div class="p-6 bg-white rounded-xl shadow">
-          <h3 class="text-2xl font-semibold mb-4">Bundle (5 Beats)</h3>
-          <p class="text-4xl font-bold mb-4">$100</p>
-          <ul class="mb-6 text-left">
-            <li>✔️ 5 Non-Exclusive битов</li>
-            <li>✔️ Скидка 30%</li>
-            <li>✔️ Royalty‑free up to 100k</li>
-          </ul>
-          <a href="https://beatstars.com/yourprofile/bundle" class="inline-block bg-red-500 hover:bg-red-600 text-white font-semibold py-2 px-4 rounded-lg transition">Купить</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section id="contact" class="py-16">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-bold mb-8">Есть вопросы?</h2>
-      <form action="mailto:youremail@example.com" method="POST" enctype="text/plain" class="max-w-lg mx-auto">
-        <input type="text" name="name" placeholder="Ваше имя" required class="w-full mb-4 p-3 border rounded" />
-        <input type="email" name="email" placeholder="Ваш email" required class="w-full mb-4 p-3 border rounded" />
-        <textarea name="message" rows="5" placeholder="Ваше сообщение" required class="w-full mb-4 p-3 border rounded"></textarea>
-        <button type="submit" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-6 rounded-lg transition">Отправить</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-gray-400 py-6">
-    <div class="container mx-auto px-4 text-center">
-      <p>© 2025 WITRAGE Beats. Все права защищены.</p>
-      <div class="mt-4">
-        <a href="https://vk.com/witrage_beats" class="mx-2 hover:text-white">VK</a>
-        <a href="https://www.youtube.com/@WITRAGE" class="mx-2 hover:text-white">YouTube</a>
-      </div>
-    </div>
+  <footer>
+    &copy; 2025 WITRAGE BEATS | <a href="https://vk.com/witrage_beats" style="color:#e11d48; text-decoration:none;">VK</a>
   </footer>
 </body>
 </html>
-
