@@ -19,17 +19,19 @@
     }
     header {
       text-align: center;
-      padding: 80px 20px 40px;
-      background: linear-gradient(145deg, #0f0f0f 70%, #e11d48 100%);
+      padding: 120px 20px 80px;
+      background: url('https://sun9-38.userapi.com/impg/abcXYZ.../your-vk-background.jpg?size=1280x720&quality=96&sign=xxx') center/cover no-repeat;
     }
     header h1 {
       font-size: 3rem;
       font-weight: 800;
       margin-bottom: 10px;
+      text-shadow: 2px 2px 8px #000;
     }
     header p {
       font-size: 1.2rem;
-      color: #9ca3af;
+      color: #f1f1f1;
+      text-shadow: 1px 1px 6px #000;
     }
     .section {
       padding: 60px 20px;
@@ -39,31 +41,30 @@
     .section h2 {
       font-size: 2rem;
       font-weight: 600;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
       text-align: center;
     }
-    .beats-grid {
+    .services-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
-      margin-top: 30px;
     }
-    .beat-card {
+    .service-card {
       background: #1f1f1f;
       border-radius: 12px;
       padding: 20px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .beat-card:hover {
+    .service-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 20px rgba(225, 29, 72, 0.3);
     }
-    .beat-card h3 {
+    .service-card h3 {
       font-size: 1.4rem;
       margin-bottom: 10px;
     }
-    .beat-card p {
+    .service-card p {
       color: #9ca3af;
       margin-bottom: 15px;
     }
@@ -80,6 +81,10 @@
     .btn:hover {
       background-color: #be123c;
     }
+    .vk-player {
+      margin: 50px auto;
+      text-align: center;
+    }
     footer {
       text-align: center;
       padding: 30px 20px;
@@ -92,33 +97,51 @@
 </head>
 <body>
   <header>
-    <h1>WITRAGE BEATS</h1>
-    <p>Прокачай свой звук вместе с нами</p>
+    <h1>WITRAGE PRODUCTION</h1>
+    <p>Профессиональное производство битов и аранжировок</p>
   </header>
 
   <section class="section">
-    <h2>🔥 Горячие биты</h2>
-    <div class="beats-grid">
-      <div class="beat-card">
-        <h3>Trap Type Beat #1</h3>
-        <p>808-heavy, dark vibes</p>
+    <h2>🎹 Наши услуги</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Базовая аренда</h3>
+        <p>Лицензия для некоммерческого использования</p>
+        <a href="https://vk.com/market/product/bazovaya-arenda-206767368-5907648" class="btn">Подробнее</a>
+        <br><br>
         <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
       </div>
-      <div class="beat-card">
-        <h3>Drill Type Beat #2</h3>
-        <p>Hard, punchy, atmospheric</p>
+      <div class="service-card">
+        <h3>Премиум аренда</h3>
+        <p>Расширенная лицензия для стриминга и монетизации</p>
+        <a href="https://vk.com/market/product/premium-arenda-206767368-5907647" class="btn">Подробнее</a>
+        <br><br>
         <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
       </div>
-      <div class="beat-card">
-        <h3>RnB Type Beat #3</h3>
-        <p>Smooth, melodic, soulful</p>
+      <div class="service-card">
+        <h3>Профессиональная аренда</h3>
+        <p>Все права на использование бита в коммерческих целях</p>
+        <a href="https://vk.com/market/product/professionalnaya-arenda-206767368-5907646" class="btn">Подробнее</a>
+        <br><br>
+        <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
+      </div>
+      <div class="service-card">
+        <h3>Полные права</h3>
+        <p>Эксклюзивные права на бит без ограничений</p>
+        <a href="https://vk.com/market/product/polnye-prava-206767368-5907645" class="btn">Подробнее</a>
+        <br><br>
         <a href="https://t.me/DZZHIL" class="btn">Купить в Telegram</a>
       </div>
     </div>
   </section>
 
+  <section class="section vk-player">
+    <h2>🎧 Слушай каталог битов</h2>
+    <iframe src="https://vk.com/widget_own_audio_playlist.php?act=show&owner_id=-206767368&playlist_id=2" width="100%" height="450" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+
   <footer>
-    &copy; 2025 WITRAGE BEATS | <a href="https://vk.com/witrage_beats" style="color:#e11d48; text-decoration:none;">VK</a>
+    &copy; 2025 WITRAGE PRODUCTION | <a href="https://vk.com/witrage_beats" style="color:#e11d48; text-decoration:none;">VK</a>
   </footer>
 </body>
 </html>
