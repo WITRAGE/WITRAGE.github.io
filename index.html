@@ -1,132 +1,60 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WITRAGE PRODUCTION</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('background-opium-texture.jpg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Orbitron', sans-serif;
-      color: white;
-    }
-    .container {
-      padding: 20px;
-      backdrop-filter: blur(8px);
-      background: rgba(0,0,0,0.6);
-      border-radius: 20px;
-      max-width: 400px;
-      margin: 50px auto;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-    }
-    .track {
-      margin-bottom: 20px;
-    }
-    audio {
-      width: 100%;
-    }
-    .buy-btn {
-      background: #ff00cc;
-      color: white;
-      padding: 8px 16px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .buy-btn:hover {
-      background: #cc00aa;
-    }
-    .track-title {
-      font-size: 16px;
-      margin-bottom: 5px;
-    }
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      margin-top: 40px;
-      opacity: 0.7;
-    }
-    .icon-links {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin-top: 10px;
-    }
-    .icon-links a img {
-      width: 24px;
-      height: 24px;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WITRAGE PRODUCTION</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="container">
-    <h2 style="text-align: center;">WITRAGE PRODUCTION</h2>
-    <p style="text-align: center; font-size: 14px; margin-top: -10px;">будь первым кто возьмет в работу</p>
+    <div id="particles-js"></div>
+    <header class="header">
+        <h1>WITRAGE PRODUCTION</h1>
+        <p>БУДЬ ПЕРВЫМ КТО ВОЗЬМЕТ В РАБОТУ</p>
+        <div class="buttons">
+            <a href="https://t.me/DZZHIL" target="_blank" class="btn telegram"><i class="fab fa-telegram-plane"></i> TG</a>
+            <a href="https://vk.com/witrage_beats" target="_blank" class="btn vk"><i class="fab fa-vk"></i> VK</a>
+        </div>
+    </header>
 
-    <!-- Playlist -->
-    <div id="playlist"></div>
-  </div>
+    <section class="services">
+        <h2>УСЛУГИ</h2>
+        <div class="service-cards">
+            <div class="card">
+                <h3>Премиум аренда 1000р</h3>
+                <p>Лицензия для коммерческого использования с большим пакетом прав.</p>
+                <a href="https://vk.com/market/product/premium-arenda-206767368-5907647" class="buy-btn">подробнее</a>
+            </div>
+            <div class="card">
+                <h3>Профессиональная аренда 2000р</h3>
+                <p>Подходит для профессиональной работы на всех платформах.</p>
+                <a href="https://vk.com/market/product/professionalnaya-arenda-206767368-5907646" class="buy-btn">подробнее</a>
+            </div>
+            <div class="card">
+                <h3>Полные права 7000р</h3>
+                <p>Эксклюзивные права на использование трека без ограничений.</p>
+                <a href="https://vk.com/market/product/polnye-prava-206767368-5907645" class="buy-btn">подробнее</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="footer">
-    2025 WITRAGE PRODUCTION | <a href="https://vk.com/witrage_beats" style="color:white">VK</a> | <a href="https://www.youtube.com/@WITRAGE" style="color:white">YouTube</a>
-    <div class="icon-links">
-      <a href="https://t.me/DZZHIL" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram"></a>
-      <a href="https://vk.com/witrage_beats" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111765.png" alt="VK"></a>
-    </div>
-    <p style="margin-top: 10px;">Вопросы: <a href="mailto:WITRAGE.prod@gmail.com" style="color:white">WITRAGE.prod@gmail.com</a></p>
-  </div>
+    <section class="catalog">
+        <h2>Каталог битов</h2>
+        <div id="vk_playlist_-206767368_2"></div>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?173"></script>
+<script type="text/javascript">
+  (function() {
+    VK.Widgets.Playlist("vk_playlist_-206767368_2", -206767368, 2,'64c35b35ebfdc418b6');
+  }());
+</script>
+        <h2>Вопросы?</h2>
+        <p>Напиши мне на <a href="mailto:witrage.prod@gmail.com">WITRAGE.prod@gmail.com</a></p>
+    </section>
 
-  <script>
-    const playlist = [
-      "1) Triple X .mp3",
-      "10) Wicked Motion.mp3",
-      "11) True July.mp3",
-      "12) Painted Dreams.mp3",
-      "13) Heart Skips.mp3",
-      "14) Chaotic Shadows.mp3",
-      "15) Dead Inside.mp3",
-      "16) Dusty Piano.mp3",
-      "17) Hellstorm.mp3",
-      "18) Infinite Night.mp3",
-      "19) Marble Blood.mp3",
-      "2) Trap House.mp3",
-      "20) Violet Flash.mp3",
-      "21) Rage Demon.mp3",
-      "22) Abyss Intro.mp3",
-      "23) Dark Blade.mp3",
-      "24) Neon Curse.mp3",
-      "25) Cold Touch.mp3",
-      "26) Cryogen Beat.mp3",
-      "3) Bloody Heaven.mp3",
-      "4) Blacklight Jungle.mp3",
-      "5) Doom Trigger.mp3",
-      "6) Subzero Dreams.mp3",
-      "7) Mirror Pulse.mp3",
-      "8) Night Phase.mp3",
-      "9) Acid Bounce.mp3"
-    ];
-
-    const container = document.getElementById('playlist');
-    playlist.forEach(track => {
-      const title = track.replace(/^[0-9]+\)\s*/, '').replace(/\.mp3$/, '');
-      const block = document.createElement('div');
-      block.className = 'track';
-      block.innerHTML = `
-        <div class="track-title">${title}</div>
-        <audio controls preload="none" src="player_tracks/${track}" type="audio/mp3"></audio><br>
-        <a href="https://t.me/DZZHIL" target="_blank"><button class="buy-btn">Купить</button></a>
-      `;
-      container.appendChild(block);
-    });
-  </script>
-</body>
-</html>
+    <footer>
+        <p>© 2025 WITRAGE PRODUCTION | <a href="https://vk.com/witrage_beats" target="_blank">VK</a> | <a href="https://www.youtube.com/@WITRAGE" target="_blank">YouTube</a></p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="particles-config.js"></script>
